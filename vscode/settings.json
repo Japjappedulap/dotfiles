@@ -1,0 +1,94 @@
+{
+  // #### Workbench configs ####
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.activityBar.visible": true,
+  "workbench.fontAliasing": "antialiased",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.tree.indent": 12,
+  "workbench.iconTheme": "vscode-icons",
+
+  // #### Editor configs ####
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 4,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 14.5,
+  "editor.fontFamily": "Consolas, \"SF Mono\", Menlo, Monaco, 'Courier New', monospace",
+  "editor.suggestSelection": "first",
+  "editor.formatOnSave": false,
+  "editor.tokenColorCustomizations": {
+    // Make keywords bold
+    "textMateRules": [
+      {
+        "scope": "keyword",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "storage",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "constant.language",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "support.class.builtin",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      }
+    ]
+  },
+
+  // Default language specific formatters
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  // #### JS ####
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // #### TS ####
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.format.enable": true,
+  "typescript.validate.enable": true,
+
+  // #### Python ####
+  "python.languageServer": "Microsoft",
+
+  // #### Ruby ####
+  "solargraph.commandPath": "/usr/local/bin/solargraph",
+
+  // #### GIT ####
+  "git.path": "/usr/local/bin/git",
+  "git.openDiffOnClick": false,
+  "leetcode.endpoint": "leetcode",
+  "dart.flutterSdkPath": "/Users/vladpotra/development/flutter",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "git.confirmSync": false,
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  }
+}
