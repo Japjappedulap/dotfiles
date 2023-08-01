@@ -7,12 +7,13 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.tree.indent": 12,
   "workbench.iconTheme": "vscode-icons",
+  "window.confirmBeforeClose": "always",
+  "files.eol": "\n",
 
   // #### Editor configs ####
   "editor.cursorStyle": "line",
   "editor.cursorWidth": 4,
   "editor.minimap.enabled": false,
-  "editor.fontSize": 14.5,
   "editor.fontFamily": "Consolas, \"SF Mono\", Menlo, Monaco, 'Courier New', monospace",
   "editor.suggestSelection": "first",
   "editor.formatOnSave": false,
@@ -46,6 +47,9 @@
     ]
   },
 
+  // #### Terminal config
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+
   // Default language specific formatters
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -62,21 +66,26 @@
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+  "[rust]": {
+    "editor.tabSize": 4
+  },
 
   // #### JS ####
   "javascript.validate.enable": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
-
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
   // #### TS ####
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.format.enable": true,
   "typescript.validate.enable": true,
 
   // #### Python ####
-  "python.languageServer": "Microsoft",
+  "python.languageServer": "Default",
 
   // #### Ruby ####
-  "solargraph.commandPath": "/usr/local/bin/solargraph",
+  "ruby.intellisense": "rubyLocate",
 
   // #### GIT ####
   "git.path": "/usr/local/bin/git",
@@ -90,5 +99,95 @@
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
-  }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "svelte.enable-ts-plugin": true,
+  "cSpell.userWords": [
+    "actioner",
+    "ADDUC",
+    "apikey",
+    "Aridhia",
+    "Authorisation",
+    "behaviour",
+    "binanceusdm",
+    "bitmex",
+    "BTCUSDT",
+    "Bybit",
+    "Capturable",
+    "ccxt",
+    "clsx",
+    "Configurer",
+    "constate",
+    "Datafile",
+    "datafiles",
+    "datetime",
+    "Firestore",
+    "flowbite",
+    "formik",
+    "huobi",
+    "idempotency",
+    "mapevents",
+    "Middlewares",
+    "Requestable",
+    "Servlet",
+    "sourcer",
+    "statefulset",
+    "Supabase",
+    "timesheet",
+    "timesheets",
+    "Uncaptured",
+    "Uppy",
+    "uuidv",
+    "weasyprint"
+  ],
+  "svg.preview.mode": "img",
+  "go.toolsManagement.autoUpdate": true,
+  "redhat.telemetry.enabled": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "editor.fontSize": 13.5,
+  "editor.inlineSuggest.enabled": true,
+  "[handlebars]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
+  "githubPullRequests.pullBranch": "never"
 }
